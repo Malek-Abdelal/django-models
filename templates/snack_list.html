@@ -1,12 +1,12 @@
 {%extends 'base.html'%}
 {%load static%}
 {%block import_css%}
-<link rel="stylesheet" href="{%static 'css/home.css'%}">
+<link rel="stylesheet" href="{%static 'css/snack_list.css'%}">
 {%endblock%}
 {%block content%}
 <h1>Welcome to our resturant</h1>
 <h2>Snacks List</h2>
 {%for x in data%}
-   <h3><a href="{%url 'snacks_details' x.id%}">{{x.name}}</a></h3>
+   <h3><a href="{%url 'snacks_details' x.id%}">- {{x.name}}</a></h3>
 {%endfor%}
 {%endblock%}

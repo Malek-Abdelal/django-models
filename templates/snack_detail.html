@@ -1,6 +1,11 @@
 {%extends 'base.html'%}
+{%load static%}
+{%block import_css%}
+<link rel="stylesheet" href="{%static 'css/snack_details.css'%}">
+{%endblock%}
 {%block content%}
-<h1>Snacks Details</h1>
+<a href="{%url 'snacks'%}" class="details-header"><b>Back to home</b></a>
+<h1 class="details-header">Snacks Details</h1>
 <h2>Name: {{snack.name}}</h2>
 <h2>Purchaser: {{snack.purchaser}}</h2>
 <h2>Description: {{snack.description}}</h2>

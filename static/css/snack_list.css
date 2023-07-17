@@ -1,0 +1,13 @@
+h1{
+    color: rgb(196, 25, 25);
+    text-align: center;
+}
+h2{
+    color: rgb(0, 0, 0);
+    padding-left: 5%;
+}
+
+h3 a {
+    text-decoration: none;
+    padding-left: 8%;
+}
